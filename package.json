@@ -13,5 +13,16 @@
     "mocha": "^5.2.0",
     "nyc": "^12.0.2"
   },
-  "keywords": []
+  "keywords": [
+    "bound",
+    "bounded",
+    "bounds",
+    "check",
+    "input",
+    "is",
+    "limit",
+    "limits",
+    "number",
+    "value"
+  ]
 }

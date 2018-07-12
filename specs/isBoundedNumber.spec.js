@@ -3,9 +3,10 @@ var ibn = require('../isBoundedNumber')
 
 describe("isBoundedNumber", function() {
 
-  var runTest = function(input, expectedResult) {
+  var runTest = function(input, expectedResult, comment) {
     var actualResult = ibn(input)
-    var label = "isBoundedNumber(" + JSON.stringify(input) + ") = " + expectedResult
+    var commentText = (comment) ? ", " + comment : ""
+    var label = "isBoundedNumber(" + JSON.stringify(input) + ") = " + expectedResult + commentText
     it(label, function() {
       assert.strictEqual(actualResult, expectedResult)
     })
@@ -13,6 +14,7 @@ describe("isBoundedNumber", function() {
 
   var testArray = [
     [0, true]
+  , [-0, true, "This is -0"]
   , [1, true]
   , [42.001011, true]
   , [-172738, true]
@@ -36,7 +38,7 @@ describe("isBoundedNumber", function() {
   ]
 
   for (var i=0; i<testArray.length; i++) {
-    runTest(testArray[i][0], testArray[i][1])
+    runTest(testArray[i][0], testArray[i][1], testArray[i][2])
   }
 
 })
