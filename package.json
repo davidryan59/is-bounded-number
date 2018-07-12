@@ -1,6 +1,6 @@
 {
   "name": "is-bounded-number",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Check if an input is numeric, and within a given bound",
   "author": "David Ryan",
   "main": "isBoundedNumber.js",
