@@ -1,9 +1,9 @@
 # Is Bounded Number (`is-bounded-number`)
 
-Provides a very simple and compact check on whether an input is:
+Provides a very simple and compact check on whether an input is all of these:
 - Numeric
-- Finite (not Infinity or NaN)
-- Within a given range
+- Finite (i.e. not Infinity or NaN)
+- Within a given range (defaulting to +/- 1e15)
 
 ## Install
 `npm install is-bounded-number`  
@@ -19,7 +19,7 @@ ibn(0)             // true
 ibn(1)             // true
 ibn(1000000)       // true
 ibn(1e15)          // true
-ibn(1e15+1)        // false - outside default limit
+ibn(1e15+1)        // false - outside default limit of +/- 1e15
 
 ibn(1000, 1e6)     // true - 1000 is less than 1e6
 ibn(1e6, 1000)     // true - 1e6 is not within bounds +/- 1000
