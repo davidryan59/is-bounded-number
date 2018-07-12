@@ -5,6 +5,8 @@ Provides a very simple and compact check on whether an input is all of these:
 - Finite (i.e. not Infinity or NaN)
 - Within a given range (defaulting to +/- 1e15)
 
+Note that this range has been chosen to be comfortably within Number.MAX_SAFE_INTEGER, which is approx 9e15.
+
 ## Install
 `npm install is-bounded-number`  
 
