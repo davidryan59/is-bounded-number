@@ -1,5 +1,7 @@
 # Is Bounded Number (`is-bounded-number`)
 
+[![npm version](https://badge.fury.io/js/is-bounded-number.png)](https://badge.fury.io/js/is-bounded-number)
+
 Provides a very simple and compact check on whether an input is all of these:
 - Numeric
 - Finite (i.e. not Infinity or NaN)

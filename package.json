@@ -2,9 +2,13 @@
   "name": "is-bounded-number",
   "version": "1.0.1",
   "description": "Check if an input is numeric, and within a given bound",
-  "author": "David Ryan",
+  "author": {
+    "name": "David Ryan",
+    "email": "davidryan1998@hotmail.com",
+    "url": "https://github.com/davidryan59"
+  },
   "main": "isBoundedNumber.js",
-  "repository": "git@github.com:daveryan23/is-bounded-number.git",
+  "repository": "git@github.com:davidryan59/is-bounded-number.git",
   "license": "ISC",
   "scripts": {
     "test": "nyc mocha ./specs/*.spec.js"
