@@ -1,5 +1,5 @@
-// const ibn = require('is-bounded-number'); // From npm
-const ibn = require('../src/index');      // Local copy
+// var ibn = require('is-bounded-number'); // From npm
+var ibn = require('../src/index');      // Local copy
 
 console.log(`const ibn = require('is-bounded-number')`);
 console.log(``);
