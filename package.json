@@ -13,7 +13,9 @@
   "scripts": {
     "examples": "node examples/run.js",
     "test": "nyc mocha ./test/*.spec.js",
-    "build": "uglifyjs src/index.js -cm -o build/index.js"
+    "build:dirs": "mkdir -p build",
+    "build:minify": "uglifyjs src/index.js -cm -o build/index.js",
+    "build": "npm run build:dirs && npm run build:minify"
   },
   "devDependencies": {
     "mocha": "^5.2.0",
