@@ -7,16 +7,18 @@
     "email": "davidryan1998@hotmail.com",
     "url": "https://github.com/davidryan59"
   },
-  "main": "isBoundedNumber.js",
+  "main": "build/index.js",
   "repository": "git@github.com:davidryan59/is-bounded-number.git",
   "license": "ISC",
   "scripts": {
-    "examples": "node examples.js",
-    "test": "nyc mocha ./*.spec.js"
+    "examples": "node examples/run.js",
+    "test": "nyc mocha ./test/*.spec.js",
+    "build": "uglifyjs src/index.js -cm -o build/index.js"
   },
   "devDependencies": {
     "mocha": "^5.2.0",
-    "nyc": "^12.0.2"
+    "nyc": "^12.0.2",
+    "uglify-js": "^3.4.9"
   },
   "keywords": [
     "bound",

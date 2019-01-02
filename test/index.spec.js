@@ -1,5 +1,5 @@
 var assert = require('assert')
-var ibn = require('./isBoundedNumber')
+var ibn = require('../src/index')
 
 describe("isBoundedNumber", function() {
 

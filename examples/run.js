@@ -1,7 +1,7 @@
 // const ibn = require('is-bounded-number'); // From npm
-const ibn = require('./isBoundedNumber'); // Local copy
+const ibn = require('../src/index');      // Local copy
 
-console.log(`const ibn = require('./isBoundedNumber')`);
+console.log(`const ibn = require('is-bounded-number')`);
 console.log(``);
 console.log(`Examples returning true:`);
 console.log(`ibn(0) returns ${ibn(0)}`);

@@ -11,4 +11,4 @@ ibn(input)        // Returns boolean. Checks input numeric and bounded by +/- 1e
 ibn(input, bound) // Returns boolean
 ```
 
-Use `npm i is-bounded-number` to install. For full examples see GitHub `examples.js` file.
+Use `npm i is-bounded-number` to install. For full examples see GitHub `examples` directory.
