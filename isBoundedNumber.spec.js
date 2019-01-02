@@ -1,12 +1,13 @@
 var assert = require('assert')
-var ibn = require('../isBoundedNumber')
+var ibn = require('./isBoundedNumber')
 
 describe("isBoundedNumber", function() {
 
-  var runTest = function(input, expectedResult, comment) {
-    var actualResult = ibn(input)
-    var commentText = (comment) ? ", " + comment : ""
-    var label = "isBoundedNumber(" + JSON.stringify(input) + ") = " + expectedResult + commentText
+  var runTest = function(input, expectedResult, optionalBound, optionalComment) {
+    var actualResult = (optionalBound) ? ibn(input, optionalBound) : ibn(input)
+    var boundText = (optionalBound) ? ", " + optionalBound : ""
+    var commentText = (optionalComment) ? ", " + optionalComment : ""
+    var label = "isBoundedNumber(" + JSON.stringify(input) + boundText + ") = " + expectedResult + commentText
     it(label, function() {
       assert.strictEqual(actualResult, expectedResult)
     })
@@ -14,7 +15,7 @@ describe("isBoundedNumber", function() {
 
   var testArray = [
     [0, true]
-  , [-0, true, "This is -0"]
+  , [-0, true, null, "This is -0"]
   , [1, true]
   , [42.001011, true]
   , [-172738, true]
@@ -35,10 +36,12 @@ describe("isBoundedNumber", function() {
   , [[1, 2, 3], false]
   , ["1", false]
   , [{1:2}, false]
+  , [1000, true, 1e6]
+  , [1e6, false, 1000]
   ]
 
   for (var i=0; i<testArray.length; i++) {
-    runTest(testArray[i][0], testArray[i][1], testArray[i][2])
+    runTest(testArray[i][0], testArray[i][1], testArray[i][2], testArray[i][3])
   }
 
 })

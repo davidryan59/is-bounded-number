@@ -1,43 +1,14 @@
-# Is Bounded Number (`is-bounded-number`)
+# is-bounded-number
 
 [![npm version](https://badge.fury.io/js/is-bounded-number.png)](https://badge.fury.io/js/is-bounded-number)
 
-Provides a very simple and compact check on whether an input is all of these:
-- Numeric
-- Finite (i.e. not Infinity or NaN)
-- Within a given range (defaulting to +/- 1e15)
-
-Note that this range has been chosen to be comfortably within Number.MAX_SAFE_INTEGER, which is approx 9e15.
-
-## Install
-`npm install is-bounded-number`  
-
-## Test
-`npm test`  
-
-## Usage
-``` js
-var ibn = require('is-bounded-number')
-
-ibn(0)             // true
-ibn(1)             // true
-ibn(1000000)       // true
-ibn(1e15)          // true
-ibn(1e15+1)        // false - outside default limit of +/- 1e15
-
-ibn(1000, 1e6)     // true - 1000 is less than 1e6
-ibn(1e6, 1000)     // true - 1e6 is not within bounds +/- 1000
-
-ibn(null)          // false
-ibn("aString")     // false
-ibn(true)          // false
-ibn(false)         // false
-ibn(Infinity)      // false
-ibn(NaN)           // false
-```
+Checks that a number is numeric, finite, and within a specific range (default is +/- 1e15).
 
 ## API
 ``` js
-ibn(input)         // Checks whether input is within +/- 1e15
-ibn(input, limit)  // Checks whether input is within +/- limit
+const ibn = require('is-bounded-number');
+ibn(input)        // Returns boolean. Checks input numeric and bounded by +/- 1e15
+ibn(input, bound) // Returns boolean
 ```
+
+Use `npm i is-bounded-number` to install. For full examples see GitHub `examples.js` file.
