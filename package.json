@@ -15,7 +15,8 @@
     "test": "nyc mocha ./test/*.spec.js",
     "build:dirs": "mkdir -p build",
     "build:minify": "uglifyjs src/index.js -cm -o build/index.js",
-    "build": "npm run build:dirs && npm run build:minify"
+    "build": "npm run build:dirs && npm run build:minify",
+    "prepublishOnly": "npm run test"
   },
   "devDependencies": {
     "mocha": "^5.2.0",
