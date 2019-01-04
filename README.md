@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/is-bounded-number.png)](https://badge.fury.io/js/is-bounded-number)
 
-Checks that a number is numeric, finite, and within a specific range (default is +/- 1e15).
+Checks that a number is numeric, finite, and within a specific range (default is +/- 1e15). Find [module on npm](https://www.npmjs.com/package/is-bounded-number) and [repo on GitHub](https://github.com/davidryan59/is-bounded-number).
 
 ## API
 ``` js
