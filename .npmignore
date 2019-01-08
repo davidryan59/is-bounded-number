@@ -1,3 +1,4 @@
+.eslintrc
 .nyc_output
 examples
 build
