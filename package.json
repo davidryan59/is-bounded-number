@@ -1,6 +1,6 @@
 {
   "name": "is-bounded-number",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Check if an input is numeric, and within a given bound",
   "author": {
     "name": "David Ryan",
