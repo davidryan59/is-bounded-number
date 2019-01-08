@@ -11,12 +11,9 @@
   "repository": "git@github.com:davidryan59/is-bounded-number.git",
   "license": "ISC",
   "scripts": {
-    "lint": "eslint src test",
+    "lint": "eslint src test examples",
     "examples": "node examples/run.js",
     "test": "nyc mocha ./test/*.spec.js",
-    "build:dirs": "mkdir -p build",
-    "build:minify": "uglifyjs src/index.js -cm -o build/index.js",
-    "build": "npm run build:dirs && npm run build:minify",
     "prepublishOnly": "npm run test"
   },
   "devDependencies": {
@@ -25,8 +22,7 @@
     "eslint-config-airbnb-es5": "^1.2.0",
     "eslint-plugin-react": "^7.12.3",
     "mocha": "^5.2.0",
-    "nyc": "^12.0.2",
-    "uglify-js": "^3.4.9"
+    "nyc": "^12.0.2"
   },
   "keywords": [
     "bound",

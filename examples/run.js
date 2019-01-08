@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+
 // var ibn = require('is-bounded-number'); // From npm
 var ibn = require('../src/index');      // Local copy
 
