@@ -12,9 +12,10 @@
   "license": "ISC",
   "scripts": {
     "lint": "eslint src test examples",
-    "examples": "node examples/run.js",
+    "lint:fix": "eslint src test examples --fix",
+    "examples": "cd ./examples && node run.js",
     "test": "nyc mocha ./test/*.spec.js",
-    "prepublishOnly": "npm run test"
+    "prepublishOnly": "npm run lint && npm run test"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",

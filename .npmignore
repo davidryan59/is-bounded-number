@@ -1,4 +1,5 @@
 .eslintrc
 .nyc_output
+.travis.yml
 examples
 test
