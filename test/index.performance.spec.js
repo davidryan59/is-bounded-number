@@ -28,11 +28,11 @@ describe('Performance of is-bounded-number', function () {
     return ibn(i);
   });
 
-  runTest(2, 3000000, 55, 'average < 55ns (nanoseconds) for ibn(i, 1) where i above limit', function (i) {
+  runTest(2, 3000000, 55, 'average < 55ns for ibn(i, 1) where i above limit', function (i) {
     return ibn(i, 1);
   });
 
-  runTest(2, 3000000, 35, 'average < 35ns (nanoseconds) for ibn(\'\') on invalid input', function (i) {
+  runTest(2, 3000000, 35, 'average < 35ns for ibn(\'\') on invalid input', function (i) {
     return ibn('');
   });
 });
