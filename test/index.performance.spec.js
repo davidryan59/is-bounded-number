@@ -1,6 +1,6 @@
-// /* eslint-disable func-names*/
-// /* eslint-disable no-unused-vars*/
-// /* eslint-disable no-console*/
+/* eslint-disable func-names*/
+/* eslint-disable no-unused-vars*/
+/* eslint-disable no-console*/
 
 var assert = require('assert');
 var ibn = require('../src/index');
