@@ -1,5 +1,6 @@
 .eslintrc
 .nyc_output
+.sonarlint
 .travis.yml
 examples
 test
