@@ -1,6 +1,9 @@
 # is-bounded-number
 
-[![npm version](https://badge.fury.io/js/is-bounded-number.svg)](https://badge.fury.io/js/is-bounded-number)[![Build status](https://travis-ci.org/davidryan59/is-bounded-number.svg?master)](https://travis-ci.org/davidryan59)
+[![npm version](https://badge.fury.io/js/is-bounded-number.svg)](https://badge.fury.io/js/is-bounded-number)
+[![Downloads per month](https://img.shields.io/npm/dm/is-bounded-number.svg?maxAge=2592000)][npm-package]
+[![Build status](https://travis-ci.org/davidryan59/is-bounded-number.svg?master)](https://travis-ci.org/davidryan59)
+
 
 Checks that a number is numeric, finite, and within a specific range (default is +/- 1e15). Find [module on npm](https://www.npmjs.com/package/is-bounded-number) and [code repo with examples on GitHub](https://github.com/davidryan59/is-bounded-number).
 
